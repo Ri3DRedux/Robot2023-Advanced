@@ -1,10 +1,5 @@
-# SwerveBase2023
+# Ri3D Redux 2023 Robot Code
 
-Swerve Drivebase for 2023 including:
+Main robot code for [Robot in 3 Days Redux](https://www.chiefdelphi.com/t/new-ri3d-team-in-2023-peoria-il-applications-open/415193).
 
-* Simulation Support 
-* Abstrated 3rd party motor control
-* Multi-Camera, Multi-Target PhotonVision for Drivetrain
-* Vision Simulation Support
-* PathPlanner for Autonomous
-* (todo) Auto-Drive
+

@@ -1,14 +1,14 @@
-package frc.wrappers.ADXRS453;
+package frc.hardwareWrappers.Gyro;
 
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.SPI.Port;
 
-public class RealADXRS453 extends AbstractADXRS453 {
+public class RealGyro extends AbstractGyro {
 
     ADXRS450_Gyro realGyro;
 
-    public RealADXRS453(){
+    public RealGyro(){
         realGyro = new ADXRS450_Gyro(Port.kOnboardCS0);
         
         System.out.println("======================================");

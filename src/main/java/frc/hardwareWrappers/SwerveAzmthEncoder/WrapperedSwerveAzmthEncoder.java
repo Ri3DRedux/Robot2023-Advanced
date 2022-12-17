@@ -1,4 +1,4 @@
-package frc.wrappers.SwerveAzmthEncoder;
+package frc.hardwareWrappers.SwerveAzmthEncoder;
 
 import edu.wpi.first.math.geometry.Rotation2d;
 import frc.UnitUtils;
@@ -6,7 +6,7 @@ import frc.lib.Calibration.Calibration;
 import frc.lib.Signal.Annotations.Signal;
 import frc.robot.Robot;
 
-public class CasseroleSwerveAzmthEncoder  {
+public class WrapperedSwerveAzmthEncoder  {
 
     AbstractSwerveAzmthEncoder enc;
 
@@ -16,7 +16,7 @@ public class CasseroleSwerveAzmthEncoder  {
     Calibration mountingOffsetCal;
 
 
-    public CasseroleSwerveAzmthEncoder(String prefix, int port, double dfltMountingOffset_rad){
+    public WrapperedSwerveAzmthEncoder(String prefix, int port, double dfltMountingOffset_rad){
         if(Robot.isReal()){
             enc = new RealSwerveAzmthEncoder(port);
         } else {

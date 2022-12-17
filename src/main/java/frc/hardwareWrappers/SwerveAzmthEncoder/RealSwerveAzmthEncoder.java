@@ -1,4 +1,4 @@
-package frc.wrappers.SwerveAzmthEncoder;
+package frc.hardwareWrappers.SwerveAzmthEncoder;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DutyCycle;

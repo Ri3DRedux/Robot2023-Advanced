@@ -1,23 +1,23 @@
-package frc.wrappers.ADXRS453;
+package frc.hardwareWrappers.Gyro;
 
 import edu.wpi.first.math.geometry.Rotation2d;
 import frc.lib.Signal.Annotations.Signal;
 import frc.robot.Robot;
 
-public class CasseroleADXRS453  {
+public class WrapperedGyro  {
 
-    AbstractADXRS453 gyro;
+    AbstractGyro gyro;
     double offset_rad = 0;
 
 
     @Signal(units = "rad")
     private double curAngle_rad;
 
-    public CasseroleADXRS453(){
+    public WrapperedGyro(){
         if(Robot.isReal()){
-            gyro = new RealADXRS453();
+            gyro = new RealGyro();
         } else {
-            gyro = new SimADXRS453();
+            gyro = new SimGyro();
         }
     }
 

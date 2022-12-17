@@ -1,6 +1,6 @@
-package frc.wrappers.SwerveAzmthEncoder;
+package frc.hardwareWrappers.SwerveAzmthEncoder;
 
-import frc.wrappers.SimDeviceBanks;
+import frc.hardwareWrappers.SimDeviceBanks;
 
 public class SimSwerveAzmthEncoder extends AbstractSwerveAzmthEncoder {
  
