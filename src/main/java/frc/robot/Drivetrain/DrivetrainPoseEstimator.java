@@ -17,6 +17,7 @@ import edu.wpi.first.math.util.Units;
 
 import frc.Constants;
 import frc.hardwareWrappers.Gyro.WrapperedGyro;
+import frc.hardwareWrappers.Gyro.WrapperedGyro.GyroType;
 import frc.lib.Signal.Annotations.Signal;
 import frc.robot.Drivetrain.Camera.PhotonCamWrapper;
 
@@ -60,7 +61,7 @@ public class DrivetrainPoseEstimator {
         cams.add(new PhotonCamWrapper("REAR_CAM", Constants.robotToRearCameraTrans)); 
         //TODO add more cameras here
 
-        gyro = new WrapperedGyro();
+        gyro = new WrapperedGyro(GyroType.ADXRS453);
 
         //Temp default - will poopulate with real valeus in the resetPosition method
         SwerveModulePosition[] initialStates = {new SwerveModulePosition(),new SwerveModulePosition(),new SwerveModulePosition(),new SwerveModulePosition()};

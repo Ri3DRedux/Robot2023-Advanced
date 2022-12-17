@@ -9,6 +9,7 @@ import frc.Constants;
 import frc.UnitUtils;
 import frc.hardwareWrappers.MotorCtrl.WrapperedCANMotorCtrl;
 import frc.hardwareWrappers.SwerveAzmthEncoder.WrapperedSwerveAzmthEncoder;
+import frc.hardwareWrappers.SwerveAzmthEncoder.WrapperedSwerveAzmthEncoder.SwerveAzmthEncType;
 import frc.lib.Signal.Annotations.Signal;
 import frc.lib.Util.MapLookup2D;
 import frc.lib.Webserver2.DashboardConfig.SwerveStateTopicSet;
@@ -50,7 +51,7 @@ class SwerveModuleControl {
 
         wheelMotorCtrl = new WrapperedCANMotorCtrl("wheel"+modName, wheelMotorIdx, WrapperedCANMotorCtrl.CANMotorCtrlType.TALON_FX);
         azmthMotorCtrl = new WrapperedCANMotorCtrl("azmth"+modName, azmthMotorIdx, WrapperedCANMotorCtrl.CANMotorCtrlType.SPARK_MAX);
-        azmth_enc = new WrapperedSwerveAzmthEncoder("encoder"+modName, azmthEncoderIdx, azmthOffset);
+        azmth_enc = new WrapperedSwerveAzmthEncoder(SwerveAzmthEncType.SRXEncoder, "encoder"+modName, azmthEncoderIdx, azmthOffset);
       
         wheelMotorCtrl.setInverted(invertWheel);
         azmthMotorCtrl.setInverted(true);

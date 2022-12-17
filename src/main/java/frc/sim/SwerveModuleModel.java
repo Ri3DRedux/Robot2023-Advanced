@@ -3,7 +3,7 @@ package frc.sim;
 import frc.Constants;
 import frc.hardwareWrappers.SimDeviceBanks;
 import frc.hardwareWrappers.MotorCtrl.Sim.SimSmartMotor;
-import frc.hardwareWrappers.SwerveAzmthEncoder.SimSwerveAzmthEncoder;
+import frc.hardwareWrappers.SwerveAzmthEncoder.Sim.SimSwerveAzmthEncoder;
 import frc.lib.Signal.Annotations.Signal;
 import frc.lib.Util.MapLookup2D;
 import frc.sim.physics.Force2d;
