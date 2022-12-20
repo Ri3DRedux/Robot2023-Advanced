@@ -1,6 +1,8 @@
 # Ri3D Redux 2023 Robot Code
 
-Main robot code for [Robot in 3 Days Redux](https://www.chiefdelphi.com/t/new-ri3d-team-in-2023-peoria-il-applications-open/415193).
+Robot code for [Robot in 3 Days Redux](https://www.chiefdelphi.com/t/new-ri3d-team-in-2023-peoria-il-applications-open/415193).
+
+The is one of two repositories being prepped. It is more "all bells and whistles" and may get used if we get to the point of needing to integrate pathplanning and vision processing.
 
 Key highlights:
 
