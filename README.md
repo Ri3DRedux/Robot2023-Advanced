@@ -1,4 +1,4 @@
-# Ri3D Redux 2023 Robot Code
+# Ri3D Redux 2023 Robot Code - Advanced Version
 
 Robot code for [Robot in 3 Days Redux](https://www.chiefdelphi.com/t/new-ri3d-team-in-2023-peoria-il-applications-open/415193).
 
